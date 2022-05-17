@@ -6,7 +6,7 @@
  * Description: the function loops through the structs
  * selector[] ment of the struct.
  * Return: a pointer
- * structype selector - Struct
+ * structype selector: - Struct
  */
 
 int (*driver(char *format))(char *format, va_list)
@@ -14,14 +14,14 @@ int (*driver(char *format))(char *format, va_list)
 int i;
 
 structype selector[] = {
-{"%c", printc},
-{"%s", printstr},
-{"%d", printint},
-{"%i", printint},
-{"%%", printpercent},
-{"%x", printhex},
-{"%X", printHEX},
-{"%o", printocta},
+{"%c", convc},
+{"%s", convstr},
+{"%d", convint},
+{"%i", convint},
+{"%%", convpercent},
+{"%x", convhex},
+{"%X", convHEX},
+{"%o", convocta},
 {NULL, NULL}
 };
 

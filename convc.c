@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * printc - prints a char.
+ * convc - prints a char.
  * @pa: format of char.
  * @format: format
  * Return: number char for printf.
  */
-int printc(char *format, va_list pa)
+int convc(char *format, va_list pa)
 {
 (void)format;
 _putchar(va_arg(pa, int));

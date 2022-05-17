@@ -13,11 +13,11 @@ return (number);
 }
 
 /**
- * contadordigit - counts the digits.
+ * comptch - counts the digits.
  * @number: input integer
  * Return: digit count
  */
-int contadordigit(int number)
+int comptch(int number)
 {
 int count = 0;
 int number2 = number;
@@ -33,11 +33,11 @@ count++;
 return (count);
 }
 /**
- * integer - a function that prints an integer.
+ * entier - a function that prints an integer.
  * @number: input integer
  * Return: digit count
  */
-int integer(int number)
+int entier(int number)
 {
 unsigned int unint;
 int count;
@@ -59,12 +59,12 @@ return (count);
 }
 
 /**
- * printint - prints a number
+ * convint - prints a number
  * @format: format to print number
  * @pa: va_list with number to print
  * Return: number of characters printed
  */
-int printint(char *format, va_list pa)
+int convint(char *format, va_list pa)
 {
 int number = va_arg(pa, int);
 int numero;

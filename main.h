@@ -9,7 +9,7 @@
  * struct structprint - structure containing
  * @q: the location and method to translate data to characters.
  * @u: print function for specific type.
- *
+ * @struct: the structure
  * Return: int
  */
 typedef struct structprint
@@ -20,18 +20,18 @@ int (*u)(char *format, va_list);
 
 int _putchar(char ch);
 int _puts(char *string);
-int printc(char *format, va_list);
-int printstr(char *format, va_list);
+int convc(char *format, va_list);
+int convstr(char *format, va_list);
 int (*driver(char *format))(char *format, va_list);
 int _printf(char *format, ...);
-int printint(char *format, va_list pa);
-int integer(int number);
-int contadordigit(int number);
+int convint(char *format, va_list pa);
+int entier(int number);
+int comptch(int number);
 int _abs(int number);
-int printpercent(char *format, va_list pa);
-int printhex(char *format, va_list);
-int printHEX(char *format, va_list);
-int printocta(char *format, va_list);
-int print_unsign(char *format, va_list);
+int convpercent(char *format, va_list pa);
+int convhex(char *format, va_list);
+int convHEX(char *format, va_list);
+int convocta(char *format, va_list);
+int conv_unsign(char *format, va_list);
 
 #endif
