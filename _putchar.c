@@ -7,23 +7,23 @@
  */
 int _putchar(char ch)
 {
-static int contador;
+static int comptch;
 static char buffer[1024];
 
 if (ch == -1)
 {
-contador = 0;
+comptch = 0;
 return (0);
 }
-if (ch == -2 || contador == 1024)
+if (ch == -2 || comptch == 1024)
 {
-write(1, buffer, contador);
-contador = 0;
+write(1, buffer, comptch);
+comptch = 0;
 }
 if (ch != -1 && ch != -2)
 {
-buffer[contador] = ch;
-contador++;
+buffer[comptch] = ch;
+comptch++;
 return (1);
 }
 return (0);
