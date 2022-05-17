@@ -21,7 +21,7 @@ structype selector[] = {
 {"%%", convpercent},
 {"%x", convhex},
 {"%o", convocta},
-{"%u", convunsigned},
+{"%u", conv_unsign},
 {NULL, NULL}
 };
 
