@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * driver - selector for type of fun.
  * @format: string.
@@ -20,7 +20,6 @@ structype selector[] = {
 {"%i", convint},
 {"%%", convpercent},
 {"%x", convhex},
-{"%X", convHEX},
 {"%o", convocta},
 {NULL, NULL}
 };
