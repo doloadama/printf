@@ -70,7 +70,7 @@ int number = va_arg(pa, int);
 int numero;
 (void)format;
 
-numero = integer(number);
+numero = entier(number);
 
 return (numero);
 }
