@@ -42,7 +42,7 @@ int entier(int number)
 unsigned int unint;
 int count;
 
-count = contadordigit(number);
+count = comptch(number);
 if (number < 0)
 {
 _putchar('-');
@@ -52,7 +52,7 @@ else
 unint = number;
 
 if (unint >= 10)
-integer(unint / 10);
+entier(unint / 10);
 _putchar(unint % 10 + '0');
 
 return (count);
