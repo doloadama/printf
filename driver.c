@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
  * driver - selector for type of fun.
  * @format: string.
